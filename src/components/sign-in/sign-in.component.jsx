@@ -30,9 +30,11 @@ handleChange=event=>{
      <FormInput type="email" name="email" handleChange={this.handleChange} value={this.state.email}  label="email" required/>
       
      <FormInput type="password" name="password" handleChange={this.handleChange} value={this.state.password}  label="password"  required />
+    <div className="buttons">
+    <CustomButton type="submit">Sign In</CustomButton>
+     <CustomButton onClick={signInGoogle} isGoogleSign>{' '} Sign In With Google {' '}</CustomButton>
+    </div>
      
-     <CustomButton type="submit">Sign In</CustomButton>
-     <CustomButton onClick={signInGoogle}>{' '} Sign In With Google {' '}</CustomButton>
     </form>
    </div>
   )
